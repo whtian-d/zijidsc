@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        .box{
+            width: 1200px;
+            height: 342px;
+            border:1px solid #f00;
+            margin:100px auto 0px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box1{
+            width: 376px;
+            height: 342px;
+            border-top: 3px solid #CA031C;
+            box-shadow: 0px 3px 10px 0px rgba(225,29,25,0.06);
+            transition: all 0.3s;
+            overflow: hidden;
+        }
+        .box2{
+            width: 314px;
+        }
+        .box3{
+            width: 500px;
+        }
+        .img{
+            width: 200px;
+            height: 133px;
+            margin:0 auto;
+            padding:29px 0px;
+            transform: translate(0,28px);
+            background: url(./img/1f-img1.jpg) no-repeat center;
+            transition: all 0.2s;
+            transition-delay: 0.2s;
+        }
+        .imghover{
+            transform: translate(0,0px);
+        }
+
+        .text{
+            width: 100%;
+            height: auto;
+        }
+        .info-1{
+            width: 100%;
+            height: 118px;
+            padding-top: 23px;
+            transform: translate(0px,0px);
+            transition: all 0.3s;
+            transition-delay: 0.5s;
+        }
+        .info-2{
+            width: 100%;
+            height: auto;
+            padding: 0px 20px;
+            transition: all 0.3s;
+            transition-delay: 0.5s;
+            transform: translate(0px,0px);
+            opacity: 0;
+        }
+        .title{
+            width: 100%;
+            height: 51px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 700;
+            line-height: 51px;
+            position: relative;
+        }
+        .title::before{
+            content: '';
+            display: block;
+            width: 31px;
+            height: 4px;
+            margin: 0 auto 17px;
+            position: absolute;
+            top:0px;
+            left:50%;
+            margin-left: -15px;
+            background: linear-gradient(90deg,rgba(245,118,85,1),rgba(237,33,32,1));
+        }
+        .text .p-1{
+            font-size: 16px;
+            color: #666;
+            text-align: center;
+        }
+        .info-1-h{
+            transform: translate(0px,-100px);
+            opacity: 0;
+        }
+        .info-2-h{
+            transform: translate(0px,-125px);
+            opacity: 1;
+        }
+        .text .p-2{
+            font-size: 14px;
+            color: #888;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .btn{
+            display: block;
+            width: 130px;
+            height: 40px;
+            line-height: 38px;
+            text-align: center;
+            font-size: 16px;
+            color: #E90A04;
+            border: 1px solid #E90A04;
+            margin: 0 auto;
+            transition: all .2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box">
+        <div class="box1">
+            <div class="img"> </div>
+            <div class="text">
+                <div class="info-1">
+                    <div class="title">
+                        自营+招商/联营
+                    </div>
+                    <p class="p-1">建立线上商城+签约多方渠道供应商</p>
+                </div>
+                <div class="info-2">
+                    <p class="p-2">
+                        平台建立自营线上商城，整合自身多渠道业务，通过会员、商品、订单、财务等功能对线下线上多业务进行统一管理。<br>
+                        商家可自行管理商品、订单、物流，定期与平台结算财务，借平台增强品牌知名度，提高交易转化率。平台则可整合行业资源，实现多样化商品和服务品类，获得多种盈利。
+                    </p>
+                    <a class="btn">咨询详情</a>
+                </div>
+
+            </div>
+
+           
+        </div>
+        <div class="box1">
+            <div class="img">
+            </div>
+            <div class="text">
+                    <div class="info-1">
+                        <div class="title">
+                            自营+招商/联营
+                        </div>
+                        <p class="p-1">建立线上商城+签约多方渠道供应商</p>
+                    </div>
+                    <div class="info-2">
+                        <p class="p-2">
+                                平台建立自营线上商城，整合自身多渠道业务，通过会员、商品、订单、财务等功能对线下线上多业务进行统一管理。<br>
+                                商家可自行管理商品、订单、物流，定期与平台结算财务，借平台增强品牌知名度，提高交易转化率。平台则可整合行业资源，实现多样化商品和服务品类，获得多种盈利。
+                        </p>
+                        <a class="btn">咨询详情</a>
+                    </div>
+
+            </div>
+        </div>
+        <div class="box1">
+            <div class="img"></div>
+            <div class="text">
+                <div class="info-1">
+                    <div class="title">
+                        自营+招商/联营
+                    </div>
+                    <p class="p-1">建立线上商城+签约多方渠道供应商</p>
+                </div>
+                <div class="info-2">
+                    <p class="p-2">
+                            平台建立自营线上商城，整合自身多渠道业务，通过会员、商品、订单、财务等功能对线下线上多业务进行统一管理。<br>
+                            商家可自行管理商品、订单、物流，定期与平台结算财务，借平台增强品牌知名度，提高交易转化率。平台则可整合行业资源，实现多样化商品和服务品类，获得多种盈利。
+                    </p>
+                    <a class="btn">咨询详情</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <script src="./test.js"></script>
+</body>
+</html>

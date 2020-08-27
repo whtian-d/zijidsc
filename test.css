@@ -1,0 +1,15 @@
+html {
+  font-size: 0.85714286px;
+}
+body {
+  background-color: blue;
+}
+body a {
+  font-size: 16px;
+}
+body a:hover {
+  color: blue;
+}
+.body {
+  background-color: blue;
+}
